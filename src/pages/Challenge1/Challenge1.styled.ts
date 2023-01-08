@@ -1,12 +1,7 @@
 import styled from "styled-components";
 
-export const StyledChallenge1Page = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+import { StyledCommonPageContainer } from "../Common/Common.styled";
 
-  height: 100%;
-
+export const StyledChallenge1Page = styled(StyledCommonPageContainer)`
   background-color: #2b2a30;
 `;

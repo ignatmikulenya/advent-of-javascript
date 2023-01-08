@@ -40,8 +40,6 @@ export const useTimer = ({
     if (isStarted) {
       intervalId.current = window.setInterval(() => {
         setTime((currentTime) => {
-          console.log("CALL");
-
           const [currentMinutes, currentSeconds] = currentTime.split(":");
           const convertedMinutes = Number(currentMinutes);
           const convertedSeconds = Number(currentSeconds);
@@ -62,8 +60,6 @@ export const useTimer = ({
 
   useEffect(() => {
     if (isStarted && time === "00:00") {
-      console.log("CALL 2");
-
       setIsStarted(false);
       clearInterval(intervalId.current);
 
